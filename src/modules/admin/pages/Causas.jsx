@@ -7,7 +7,7 @@ const Causas = () => {
     <>
       <Container fluid>
         <h1>Seguimiento de Causas</h1>
-        <Table hover className="text-center" size="md">
+        <Table hover bordered className="text-center">
           <thead>
             <tr>
               <th>N° ROL</th>
@@ -21,7 +21,7 @@ const Causas = () => {
           </thead>
           <tbody>
             <tr>
-              <td>1345567</td>
+              <td>1345569</td>
               <td>13 tribunal en lo penal</td>
               <td>Jorge Ruiz</td>
               <td>Herencia forzosa</td>

@@ -8,8 +8,8 @@ const Escritos = () => {
     <>
       <h1>Almacenamiento de Escritos</h1>
 
-      <Container className="mt-4">
-        <Table hover className="text-center" size="md">
+      <Container fluid className="mt-4">
+        <Table hover bordered className="text-center">
           <thead>
             <tr>
               <th>Tipo</th>

@@ -1,5 +1,4 @@
-:root {
-    color-scheme: light dark;
+:root {    
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
@@ -9,85 +8,52 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;    
+*{      
     font-family: 'Roboto';
+    margin:0;
 }
 
-
-.main{
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-    "left-menu topMenu"
-    "left-menu content ";
-    grid-template-columns: 1.5fr 10.5fr;
-    grid-template-rows: 1fr 11fr;
-}
-
-.main .menu{
-    grid-area:left-menu;
-    color: white;        
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.main .topMenu{
-    grid-area:topMenu;
-    // box-shadow: 10px 2px 35px 1px rgb(201, 201, 201);
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 0 20px; 
-    gap:15px;
-}
-.main .content{  
-    grid-area:content;        
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
- .menu{
-    background-image: linear-gradient(rgba(21, 0, 255, 0.952), rgba(12, 0, 124, 0.884),rgba(7, 0, 71, 0.767),rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.986)),url(../img/ornamento.jpg) ;
+.menu{
+    background-image: linear-gradient(rgba(26, 12, 180, 0.952),rgba(0, 0, 0, 0.986)),url(../img/ornamento.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-
+    width: 100%;
+    min-height: 100dvh;  
+    min-height: 100%;      
 }
 
 .menu #companyTitle{
     height: 80px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;    
+    padding-left: 20px;    
+    align-items: center; 
+    color: white;   
 }
 
-// .menu #companyTitle h1{
-//     padding-right: 10px;
-// }
+.menu #companyTitle h2{
+    padding-left: 30px;
+}
 .menu #companyTitle img{
     width: 30px;
-    color: white;    
+        
 }
 .menu nav{
     margin-top: 30px;
     width: 100%;
 }
 .menu nav ul{
-    padding: 0;
-    margin: 0;
+    padding: 0;    
     display: flex;
     flex-direction: column;
     align-items: left;
     list-style: none;
 }
 .menu nav ul li{
-    height: 55px;
-    padding: 0 15px;
+    height: 65px;
+    padding-left:20px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     
 }
@@ -96,18 +62,22 @@
     backdrop-filter: blur(10px);
 }
 .menu nav ul li img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 .menu nav ul li a{    
-    width: 170px;
+    padding-left: 30px;
+    padding-right: 0;
+    width: 100%;
     display: flex;
+    justify-content: left;
     align-items: center;
     height:100%;   
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 400;
-    translate: all 1s ease;
+    font-weight: 300;   
+    
+    font-size: 1.2rem;
 }
 .active{
     background-color: rgba(255, 255, 255, 0.2);    
@@ -117,35 +87,36 @@
 
 /* top menu */
 
-.topMenu{
-    // padding-right: 10px;
-    color: rgb(69, 69, 248);
+.topMenu{    
+    color: rgba(26, 12, 180, 0.952);
+    width: 100%;
 }
-.topMenu img{
-    margin-top: -10px;
-    width: 50px;
-    // padding-left: 20px;
+.topMenu img{   
+    width: 50px;    
 }
 .topMenu #role{
     font-style: italic;
-    // padding-right: 15px;
+    padding-top: 10px;
     color: rgb(158, 158, 158);
     font-size: 16px;
 }
 .topMenu #name{
+    padding-top: 10px;
     font-size: 1.5em;
     font-weight: 500;
 }
 
 
 /* content */
-
-.content #breadcrums{
+main{
+    min-height: 100dvh;
+}
+main #breadcrums{
     font-size: 1.3em;
     text-align: left;    
     color: rgb(202, 202, 202);
 }
-.content #sectionTitle{
+main #sectionTitle{
     padding-top: 10px;
     font-size: 2.4em;
 

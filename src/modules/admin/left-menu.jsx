@@ -5,13 +5,14 @@ import dash from './assets/img/dash.png'
 import edit from './assets/img/edit.png'
 import balance from './assets/img/balance.png'
 import people from './assets/img/people.png'
+import Col from 'react-bootstrap/Col'
 
 const LeftMenu = () => {
   const active = css.active
   const location = useLocation()
   return (
-    <>
-      <section className={css.menu}>
+    <Col lg={3} xl={3} xxl={2} md={4} sm={4} className="p-0">
+      <aside className={`${css.menu}`}>
         <div id={css.companyTitle}>
           <img src={menuBurger} alt="" />
           <h2>
@@ -52,8 +53,8 @@ const LeftMenu = () => {
             </li>
           </ul>
         </nav>
-      </section>
-    </>
+      </aside>
+    </Col>
   )
 }
 

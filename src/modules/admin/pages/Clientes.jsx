@@ -18,9 +18,9 @@ const Clientes = () => {
     <>
       <Container fluid>
         <Row>
-          <Col md={9}>
+          <Col>
             <h1 className="mb-4">Cartera de clientes</h1>
-            <Table hover className="text-center" size="sm">
+            <Table hover bordered className="text-center">
               <thead>
                 <tr>
                   <th>Foto</th>

@@ -1,17 +1,16 @@
-import css from './assets/css/admin.module.scss'
 import LeftMenu from './left-menu'
-import TopMenu from './top-menu'
-import Content from './content'
+import Main from './Main'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 const Admin = () => {
   return (
-    <>
-      <div className={css.main}>
+    <Container fluid>
+      <Row>
         <LeftMenu />
-        <TopMenu />
-        <Content />
-      </div>
-    </>
+        <Main />
+      </Row>
+    </Container>
   )
 }
 
