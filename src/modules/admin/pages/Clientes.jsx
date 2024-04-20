@@ -16,10 +16,10 @@ const Clientes = () => {
 
   return (
     <>
-      <Container fluid>
+      <Container fluid className="mt-4">
         <Row>
           <Col>
-            <h1 className="mb-4">Cartera de clientes</h1>
+            <h1>Cartera de clientes</h1>
             <Table hover bordered className="text-center">
               <thead>
                 <tr>

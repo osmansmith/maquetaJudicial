@@ -6,9 +6,8 @@ import MenuRight from '../assets/img/menuRight.png'
 const Escritos = () => {
   return (
     <>
-      <h1>Almacenamiento de Escritos</h1>
-
       <Container fluid className="mt-4">
+        <h1>Almacenamiento de Escritos</h1>
         <Table hover bordered className="text-center">
           <thead>
             <tr>

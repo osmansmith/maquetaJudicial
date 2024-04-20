@@ -5,7 +5,7 @@ import Badge from 'react-bootstrap/Badge'
 const Causas = () => {
   return (
     <>
-      <Container fluid>
+      <Container fluid className="mt-4">
         <h1>Seguimiento de Causas</h1>
         <Table hover bordered className="text-center">
           <thead>
